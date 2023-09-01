@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\.552c8069b61302f80e358bcf25a278d7bd2a76b4-audit.json",
+    "files": [
+        {
+            "date": 1693568230436,
+            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-17-success.log",
+            "hash": "dfa15c0658422f68d9432e707a6d50af6064bf89b8d446125b1a5e38c6082780"
+        }
+    ],
+    "hashType": "sha256"
+}
