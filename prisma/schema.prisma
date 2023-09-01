@@ -19,9 +19,20 @@ model User {
   contactNo  String
   address    String
   profileImg String
+
+  @@map("users")
+}
+
+model Category {
+  id    String @id @default(uuid())
+  title String
+
+  @@map("categories")
 }
 
 enum Role {
   admin
   customer
 }
+
+// .create()` invocation -- P2021 - user does not exist
