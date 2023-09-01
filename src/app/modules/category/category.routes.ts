@@ -15,15 +15,16 @@ router.get('/', CategoriesController.getAllCategoriesFromDB);
 router.get('/:id', CategoriesController.getCategoryById);
 
 // router.get('/:id', auth(ENUM_USER_ROLE.ADMIN), UserController.getUserById);
-// router.patch(
-//   '/:id',
-//   auth(ENUM_USER_ROLE.ADMIN),
-//   UserController.updateOneUserIntoDB
-// );
-// router.delete(
-//   '/:id',
-//   auth(ENUM_USER_ROLE.ADMIN),
-//   UserController.deleteUserFromDB
-// );
+router.patch(
+  '/:id',
+  auth(ENUM_USER_ROLE.ADMIN),
+  CategoriesController.updateOneCategoryIntoDB
+);
+
+router.delete(
+  '/:id',
+  auth(ENUM_USER_ROLE.ADMIN),
+  CategoriesController.deleteCategoryFromDB
+);
 
 export const CategoriesRoutes = router;
