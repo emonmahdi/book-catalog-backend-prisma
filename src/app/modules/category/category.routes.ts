@@ -14,7 +14,6 @@ router.post(
 router.get('/', CategoriesController.getAllCategoriesFromDB);
 router.get('/:id', CategoriesController.getCategoryById);
 
-// router.get('/:id', auth(ENUM_USER_ROLE.ADMIN), UserController.getUserById);
 router.patch(
   '/:id',
   auth(ENUM_USER_ROLE.ADMIN),
