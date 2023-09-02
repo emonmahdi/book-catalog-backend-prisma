@@ -5,6 +5,7 @@ import { BookController } from './book.controller';
 
 const router = express.Router();
 
+router.get('/', BookController.getAllBookFromDB);
 router.post(
   '/create-book',
   auth(ENUM_USER_ROLE.ADMIN),
