@@ -2,57 +2,54 @@ import { Category } from '@prisma/client';
 import prisma from '../../../shared/prisma';
 
 const insertIntoDB = async (data: Category): Promise<Category> => {
-  const user = await prisma.category.create({
+  return await prisma.category.create({
     data,
   });
-
-  return user;
 };
 
-const getAllCategoriesFromDB = async () => {
-  const result = await prisma.category.findMany({});
 
-  return result;
+const getAllFromDB = async (): Promise<Category[]> => {
+  return await prisma.category.findMany({
+    include: {
+      books: true,
+    },
+  });
 };
 
-const getCategoryById = async (id: string): Promise<Category | null> => {
-  const result = await prisma.category.findUnique({
+const getByIdFromDB = async (id: string): Promise<Category | null> => {
+  return await prisma.category.findUnique({
     where: {
       id,
     },
+    include: {
+      books: true,
+    },
   });
-
-  return result;
 };
 
-const updateOneCategoryIntoDB = async (
+const updateIntoDB = async (
   id: string,
   payload: Partial<Category>
 ): Promise<Category> => {
-  const result = await prisma.category.update({
+  return await prisma.category.update({
     where: {
       id,
     },
     data: payload,
   });
-
-  return result;
 };
-
-const deleteCategoryFromDB = async (id: string): Promise<Category> => {
-  const result = await prisma.category.delete({
+const deleteFromDB = async (id: string): Promise<Category> => {
+  return await prisma.category.delete({
     where: {
       id,
     },
   });
-
-  return result;
 };
 
-export const CategoriesService = {
+export const CategoryService = {
   insertIntoDB,
-  getAllCategoriesFromDB,
-  getCategoryById,
-  updateOneCategoryIntoDB,
-  deleteCategoryFromDB,
+  getAllFromDB,
+  getByIdFromDB,
+  updateIntoDB,
+  deleteFromDB,
 };
