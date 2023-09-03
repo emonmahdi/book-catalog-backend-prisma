@@ -116,6 +116,50 @@ const getAllFromDB = async (
   };
 };
 
+const getBooksByCategoryId = async (
+  categoryId: string,
+  options: IPaginationOptions
+): Promise<IGenericResponse<Book[]>> => {
+  const { size, page, skip } = paginationHelpers.calculatePagination(options);
+
+  const result = await prisma.book.findMany({
+    where: {
+      category: {
+        id: categoryId,
+      },
+    },
+    skip,
+    take: size,
+    orderBy:
+      options.sortBy && options.sortOrder
+        ? { [options.sortBy]: options.sortOrder }
+        : {
+            price: 'desc',
+          },
+    include: {
+      category: true,
+    },
+  });
+
+  const total = await prisma.book.count({
+    where: { category: { id: categoryId } },
+  });
+
+  const subtotal = await prisma.book.count();
+
+  const totalPage = Math.ceil(subtotal / size);
+
+  return {
+    meta: {
+      size,
+      page,
+      total,
+      totalPage,
+    },
+    data: result,
+  };
+};
+
 const getByIdFromDB = async (id: string): Promise<Book | null> => {
   return await prisma.book.findUnique({
     where: {
@@ -155,4 +199,5 @@ export const BookService = {
   getByIdFromDB,
   updateIntoDB,
   deleteFromDB,
+  getBooksByCategoryId,
 };

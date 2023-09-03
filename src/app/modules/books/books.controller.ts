@@ -31,6 +31,20 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getBooksByCategoryId = catchAsync(async (req: Request, res: Response) => {
+  const categoryId = req.params.categoryId;
+  const options = pick(req.query, paginationFields);
+  const result = await BookService.getBooksByCategoryId(categoryId, options);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Books fetched successfully',
+    meta: result.meta,
+    data: result.data,
+  });
+});
+
 const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const result = await BookService.getByIdFromDB(id);
@@ -71,4 +85,5 @@ export const BookController = {
   getByIdFromDB,
   updateIntoDB,
   deleteFromDB,
+  getBooksByCategoryId,
 };
