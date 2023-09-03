@@ -6,114 +6,19 @@
     "auditLog": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\.552c8069b61302f80e358bcf25a278d7bd2a76b4-audit.json",
     "files": [
         {
-            "date": 1693568230436,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-17-success.log",
-            "hash": "dfa15c0658422f68d9432e707a6d50af6064bf89b8d446125b1a5e38c6082780"
+            "date": 1693748415979,
+            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-19-success.log",
+            "hash": "88104e478aafaf47ae79fc3730357285dfba01e121dc0c987932683054580692"
         },
         {
-            "date": 1693569697333,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-18-success.log",
-            "hash": "0fe134114a708896b2ee19c2f306262f1112c0db59d5970584c99af5bc7f9935"
+            "date": 1693753232281,
+            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-21-success.log",
+            "hash": "7e7b8c0c7b384094c2252f335697aedb945b58e8a785c97c5bd65d8c2d6bd2d0"
         },
         {
-            "date": 1693574134321,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-19-success.log",
-            "hash": "003a86fcaa9cf5c51cd4d8b83c9be27f8029784200ce66766cebf6e8519ac1a8"
-        },
-        {
-            "date": 1693577972519,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-20-success.log",
-            "hash": "580981a02e2ef2b9d0ed7a0c89caac6e002dd31d6c691d2b93e15e7823c3a4f7"
-        },
-        {
-            "date": 1693581039436,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-21-success.log",
-            "hash": "e87383f6476d4e1a0a40d9f50e84cd73b04a30e9e8a2bcf4d4cbc0407643b61b"
-        },
-        {
-            "date": 1693586685091,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-22-success.log",
-            "hash": "0a55b1e78ec280394521c5f49dd657f05da52cc950166aca15898a8c6ce80e88"
-        },
-        {
-            "date": 1693587631764,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-01-09-23-success.log",
-            "hash": "f2882154c8d2af70f6e1a08fa01c112c999ae264d525f99aaec13188c3b80b3d"
-        },
-        {
-            "date": 1693628517411,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-10-success.log",
-            "hash": "346d95de1368397f3744fbcfe8e1778087b16aaac0778fa573fc5cacbb713027"
-        },
-        {
-            "date": 1693631004350,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-11-success.log",
-            "hash": "57c89ca490b13da5a8eb20c8985934d15191497ba579112cf1280306f5230375"
-        },
-        {
-            "date": 1693637514455,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-12-success.log",
-            "hash": "de9cd1e11ebd475428c870d92f2f20ee55349367c02a01b763f1150e83c3efaf"
-        },
-        {
-            "date": 1693638010119,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-13-success.log",
-            "hash": "aaf76cf1bf9be58c4fcecb27acf515889f225aaf7215e7629abd6ebb117850bd"
-        },
-        {
-            "date": 1693641836667,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-14-success.log",
-            "hash": "1448f0c8b1bed922967dfdb1340980123c1e9db74e71674318b1001f5d2100d4"
-        },
-        {
-            "date": 1693651201384,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-16-success.log",
-            "hash": "60cbc5a25a53b9175e71549b506511363331b001f5fdb358877254d63565c32b"
-        },
-        {
-            "date": 1693674068635,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-02-09-23-success.log",
-            "hash": "7f4c7935601083c2ab5acb87b5c75e9beb79becfebee8f8d505951fff1fd1945"
-        },
-        {
-            "date": 1693679072250,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-00-success.log",
-            "hash": "be7ff85d3f4649740942e2139cb6c7d97642fca4e3d7846ef81038d3cd55a281"
-        },
-        {
-            "date": 1693681934598,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-01-success.log",
-            "hash": "d1466d9587fdc2cb33579fc362eebef8c6e589a75502bece27c8a4b540365db5"
-        },
-        {
-            "date": 1693714439084,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-10-success.log",
-            "hash": "db834df9b5af237734a5a819c8133a6a5b6cdca560b08ce6991b7315bf783cd4"
-        },
-        {
-            "date": 1693717328512,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-11-success.log",
-            "hash": "3e639d262c56095f86d59d13e169e8c716faf8deaded6fbd7f958c305a523a9c"
-        },
-        {
-            "date": 1693733167074,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-15-success.log",
-            "hash": "7ba81a87fa6161b82ed356c3cde87c6ac3a97d25c2e09b34f4b255d81370c829"
-        },
-        {
-            "date": 1693735427762,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-16-success.log",
-            "hash": "6c97bbc566c497ea22d70024b00a2499d1b7b6b5492e502d3d163465ad80091c"
-        },
-        {
-            "date": 1693742371794,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-17-success.log",
-            "hash": "a81f16dba82a57d3be07d412ea4c36cd1e481c08619a7eb8ca0c9608837d9a21"
-        },
-        {
-            "date": 1693743246678,
-            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-18-success.log",
-            "hash": "0de9f340035235e5365ac8a34841becd3c44d33483054d56132be66b4b7747ac"
+            "date": 1693757648796,
+            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-22-success.log",
+            "hash": "c90be3572cd9b989503cafb883f3955e3f8d1d952b37d90ae556d22d8a9deeec"
         }
     ],
     "hashType": "sha256"
