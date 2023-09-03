@@ -109,6 +109,11 @@
             "date": 1693742371794,
             "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-17-success.log",
             "hash": "a81f16dba82a57d3be07d412ea4c36cd1e481c08619a7eb8ca0c9608837d9a21"
+        },
+        {
+            "date": 1693743246678,
+            "name": "D:\\Programming-Hero\\Next Level Web Development\\Assignments\\Assignment-8\\book-catallog-backend-prisma\\logs\\winston\\successes\\phu-2023-03-09-18-success.log",
+            "hash": "0de9f340035235e5365ac8a34841becd3c44d33483054d56132be66b4b7747ac"
         }
     ],
     "hashType": "sha256"

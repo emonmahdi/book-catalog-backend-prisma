@@ -46,12 +46,18 @@ const getByIdFromDB = async (
       where: {
         id: orderId,
       },
+      include: {
+        orderedBooks: true,
+      },
     });
   } else {
     return await prisma.order.findFirst({
       where: {
         id: orderId,
         userId: userId,
+      },
+      include: {
+        orderedBooks: true,
       },
     });
   }
