@@ -50,9 +50,33 @@ const getByIdFromDBCustomer = catchAsync(
   }
 );
 
+const getAllFromDBCustomer = catchAsync(async (req: Request, res: Response) => {
+  const { id: userId } = req.user as { id: string };
+  const result = await OrderService.getAllFromDBCustomer(userId);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Customer Orders fetched successfully!',
+    data: result,
+  });
+});
+
+const getOrderForCustomer = catchAsync(async (req: Request, res: Response) => {
+  const { customerId } = req.params;
+  const result = await OrderService.getOrderForCustomer(customerId);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Customer Orders fetched successfully!',
+    data: result,
+  });
+});
+
 export const OrderController = {
   createOrder,
   getByIdFromDBCustomer,
   getAllFromDB,
   getByIdFromDB,
+  getAllFromDBCustomer,
+  getOrderForCustomer,
 };
