@@ -5,7 +5,8 @@ import sendResponse from '../../../shared/sendResponse';
 import { OrderService } from './orders.service';
 
 const createOrder = catchAsync(async (req: Request, res: Response) => {
-  const { userId, orderedBooks } = req.body;
+  const { orderedBooks } = req.body;
+  const { id: userId } = req.user as { id: string };
   const result = await OrderService.createOrder(userId, orderedBooks);
   sendResponse(res, {
     statusCode: httpStatus.OK,

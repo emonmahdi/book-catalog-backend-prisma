@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
-import catchAsync from "../../../shared/catchAsync";
+import catchAsync from '../../../shared/catchAsync';
 import { AuthService } from './auth.service';
 import sendResponse from '../../../shared/sendResponse';
 import { ILoginUserResponse, IRefreshTokenResponse } from './auth.interface';
@@ -36,7 +36,7 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
     statusCode: httpStatus.OK,
     success: true,
     message: 'User logged in successfully!',
-    data: others,
+    token: others.token,
   });
 });
 
@@ -61,7 +61,7 @@ const refreshToken = catchAsync(async (req: Request, res: Response) => {
     statusCode: httpStatus.OK,
     success: true,
     message: 'User logged in successfully!',
-    data: result,
+    token: result.token,
   });
 });
 
@@ -89,7 +89,6 @@ const logoutUser = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
-
 
 export const AuthController = {
   createUser,

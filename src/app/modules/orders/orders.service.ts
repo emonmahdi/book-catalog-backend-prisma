@@ -1,4 +1,6 @@
 import { Order, OrderedBook } from '@prisma/client';
+import httpStatus from 'http-status';
+import ApiError from '../../../errors/ApiError';
 import prisma from '../../../shared/prisma';
 
 const createOrder = async (userId: string, orderedBooks: OrderedBook[]) => {
@@ -17,6 +19,9 @@ const createOrder = async (userId: string, orderedBooks: OrderedBook[]) => {
     },
   });
 
+  if (!result) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Order not create');
+  }
   return result;
 };
 
